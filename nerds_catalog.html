@@ -36,61 +36,62 @@
   	</header>
 
   	<main>
-  			
+  		<h1>Магазин готовых шаблонов</h1>
   		<section class="controls">
-  			<div>
-	  			<h2>Сетка:</h2>
-	  			<ul class="gridtype">
-	  				<li>
-	  					<img src="img/radio-on.svg">
-	  					<input type="radio" id="adapt" checked>
-	  					<label for="adapt">Адаптивная</label>
-	  				</li>
-	  				<li>
-	  					<img src="img/radio-off.svg">
-	  					<input type="radio" id="fix">
-	  					<label for="fix">Фиксированная</label>
-	  				</li>
-	  				<li>
-	  					<img src="img/radio-off.svg">
-	  					<input type="radio" id="rubber">
-	  					<label for="rubber">Резиновая</label>
-	  				</li>
-	  			</ul>
-			</div>
-			<div>
-				<h2>Особенности</h2>
-				<ul class="features">
-					<li>
-						<img src="img/checkbox-on.svg">
-						<input type="checkbox" id="slider" checked>
-						<label for="slider">Слайдер</label>
-					</li>
-					<li>
-						<img src="img/checkbox-off.svg">
-						<input type="checkbox" id="priorities">
-						<label for="priorities">Блок преимуществ</label>
-					</li>
-					<li>
-						<img src="img/checkbox-on.svg">
-						<input type="checkbox" id="news" checked>
-						<label for="news">Новости</label>
-					</li>
-					<li>
-						<img src="img/checkbox-off.svg">
-						<input type="checkbox" id="gallery">
-						<label for="gallery">Галерея</label>
-					</li>
-					<li>
-						<img src="img/checkbox-off.svg">
-						<input type="checkbox" id="trashbox">
-						<label for="trashbox">Корзина</label>
-					</li>
-				</ul>
-			</div>
-			<div>
-				<a href="#">Показать</a>
-			</div>
+  			<h2 class="visually-hidden">Фильтр дизайнов</h2>
+  			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+	  			<fieldset>
+		  			<legend>Сетка:</legend>
+		  			<ul class="gridtype">
+		  				<li class="filter-option">
+		  					<img src="img/radio-on.svg">
+		  					<input type="radio" id="adapt" name="gridtype" checked>
+		  					<label for="adapt">Адаптивная</label>
+		  				</li>
+		  				<li class="filter-option">
+		  					<img src="img/radio-off.svg">
+		  					<input type="radio" id="fix" name="gridtype">
+		  					<label for="fix">Фиксированная</label>
+		  				</li>
+		  				<li class="filter-option">
+		  					<img src="img/radio-off.svg">
+		  					<input type="radio" id="rubber" name="gridtype">
+		  					<label for="rubber">Резиновая</label>
+		  				</li>
+		  			</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Особенности</legend>
+					<ul class="features">
+						<li class="filter-option">
+							<img src="img/checkbox-on.svg">
+							<input type="checkbox" id="slider" checked>
+							<label for="slider">Слайдер</label>
+						</li>
+						<li class="filter-option">
+							<img src="img/checkbox-off.svg">
+							<input type="checkbox" id="priorities">
+							<label for="priorities">Блок преимуществ</label>
+						</li>
+						<li class="filter-option">
+							<img src="img/checkbox-on.svg">
+							<input type="checkbox" id="news" checked>
+							<label for="news">Новости</label>
+						</li>
+						<li class="filter-option">
+							<img src="img/checkbox-off.svg">
+							<input type="checkbox" id="gallery">
+							<label for="gallery">Галерея</label>
+						</li>
+						<li class="filter-option">
+							<img src="img/checkbox-off.svg">
+							<input type="checkbox" id="trashbox">
+							<label for="trashbox">Корзина</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit">Показать</button>
+			</form>
   		</section>
 
   		<section class="designs">

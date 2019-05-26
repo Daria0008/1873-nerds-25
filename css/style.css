@@ -12,6 +12,10 @@ a {
 	text-decoration: none;
 }
 
+.do-center{
+	width: 1160px;
+	margin: 0 auto;
+}
 
 .header-main {
 	background-color: #eeeeee;
@@ -22,9 +26,16 @@ a {
 }
 
 .header-nav{
+	display: flex;
+	justify-content: space-around;
+	width: 1160px;
+	min-height: 80px;
+	margin-bottom: 65px;
 	text-transform: uppercase;
 	color: #000000;
 }
+
+.header-nav a {text-decoration: none}
 
 .header-nav a:hover{
 	color: #fb565a;
@@ -42,6 +53,45 @@ a {
 .main-nav, .purchase-nav, .logo-nav{
 	list-style: none;
 	color: #000000;
+}
+
+.logo-nav{
+	margin: 0;
+	padding: 0;
+	width: 160px;
+	min-height: 65px;
+}
+
+.main-nav{
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	width: 450px;
+	min-height: 65px;
+}
+
+.purchase-nav {
+	margin: 0;
+	padding: 0;
+	width: 120px;
+	min-height: 65px;
+	
+}
+
+.promo{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 80px 0;
+	padding: 0 10px;
+
+}
+
+.promo-card{
+	margin: 0;
+	padding: 0;
+	width: 300px;
+	min-height: 350px;
 }
 
 .promo h3{
@@ -103,6 +153,31 @@ a {
 	background-color: #e5a722;
 }
 
+.footer-all{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+	
+
+.footer-letters {
+	margin: auto auto auto 120px;
+	padding: 0;
+	width: 540px;
+	min-height: 80px;
+}
+
+.footer-letters > * {
+	margin: 0;
+	padding: 0;
+}
+
+.footer-buttons{
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
 .footer-buttons li{
 	list-style: none;
 }
@@ -121,6 +196,29 @@ a {
 	margin: 29px;
 }
 
+.footer-buttons a:hover{
+	background-color: #e74246;
+}
+
+.footer-buttons a:active{
+	background-color: #d7373b;
+	opacity: rgba(0, 1, 1, 0.1);
+}
+
+.catalog-header{
+	background-color: #eeeeee;
+}
+
+.catalog-header > h1{
+	font-size: 55px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.radio{
+	display: none;
+}
+
 .visually-hidden{
 	position: absolute;
 	width: 1px;
@@ -131,3 +229,15 @@ a {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
+.modal-write-us{
+	width: 960px;
+	height: 590px;
+}
+
+/* вспомогательный для сеток */
+
+/*body > * {background: rgba(255, 0, 0, 0.3);}*/
+body > * > * {background: rgba(75, 255, 0, 0.3);}
+body > * > * > * {background: rgba(0, 0, 255, 0.3);}
+/*body > * > * > * > * {background: rgba(0, 255, 255, 0.3);} */

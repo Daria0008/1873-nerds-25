@@ -29,7 +29,7 @@ a {
 	width: 760px;
 }
 
-.designs li {
+.designs li, .controls li {
 	list-style: none;
 }
 

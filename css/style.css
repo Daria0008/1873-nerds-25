@@ -23,7 +23,7 @@ a {
 
 .header-main {
 	margin: 0;
-	padding: 0;
+	padding: 36px 0;
 	background-color: #eeeeee;
 }
 
@@ -37,7 +37,7 @@ a {
 
 .header-nav{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	width: 1160px;
 	min-height: 80px;
 	padding-top: 49px;
@@ -248,7 +248,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 0 80px 0;
-	padding: 0 10px;
+	padding: 0;
 }
 
 .promo-card{
@@ -281,7 +281,6 @@ a {
 	background-image: url(../img/advantage-picture-yellow.jpg);
 }
 
-
 .promo h3{
 	text-transform: uppercase;
 	color: #000000;
@@ -299,7 +298,7 @@ a {
 	color: #ffffff;
 	font-weight: 16px;
 	text-align: center;
-	vertical-align: middle;
+	
 }
 
 .promo p{
@@ -407,7 +406,6 @@ a {
 	text-align: center;
 	line-height: 30px;
 	color: #000000;
-
 }
 
 .design-card-text{
@@ -521,6 +519,98 @@ a {
 	vertical-align: middle;
 }
 
+.modal-write-us{
+	display: block;
+	width: 760px;
+	height: 430px;
+	margin: 10px auto;
+	padding: 100px 80px;
+	box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+
+/*.modal-form-both{
+	display: flex;
+	justify-content: space-between;
+	width: 760px;
+	min-height: 80px;
+}*/
+
+.modal-header{
+	display: flex;
+	justify-content: space-between;
+	width: 766px;
+	margin: 0 auto;	
+}
+
+.modal-header h2{
+	margin: 0;
+	padding: 0;
+	font-size: 45px;
+	font-weight: 500;
+	text-align: left;
+	color: #000000;
+	margin-bottom: 49px;
+}
+
+.modal-form{
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	min-width: 760px;
+	}
+
+
+.modal-form-field input[type="text"], 
+.modal-form-field input[type="email"]{
+	display: block;
+	width: 360px;
+	height: 50px;
+	text-align: left;
+	color: rgba(68, 68, 68, 0.5);
+	vertical-align: middle;
+	border: 2px solid #d7dcde;
+	border-radius: 2px;
+	margin-bottom: 36px;
+}
+
+.modal-form-field label{
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+
+
+}
+
+.modal-form-field textarea{
+	width: 752px;
+	height: 118px;
+	text-align: left;
+	color: rgba(68, 68, 68, 0.5);
+	vertical-align: middle;
+	border: 2px solid #d7dcde;
+	border-radius: 2px;
+}
+
+.modal-form input[type="submit"]{
+	display: block;
+	width: 260px;
+	height: 50px;
+	padding: 19px 84px 18px 82px;
+	margin-top: 48px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.13;
+	font-size: 16px;
+  	font-weight: 500;
+	color: #ffffff;
+	background-color: #fb565a;
+	border: none;
+  	border-radius: 3px;
+ }
+
 .visually-hidden{
 	position: absolute;
 	width: 1px;
@@ -549,43 +639,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }*/
 
-
-.modal-write-us{
-	display: block;
-	width: 960px;
-	height: 590px;
-	margin: 10px auto;
-	padding: 90px 85px;
-	box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
-}
-
-.modal-inner{
-	display: block;
-
-
-}
-
-.modal-header{
-	display: flex;
-	justify-content: space-between;
-	margin: 0 10px;	
-}
-
-.modal-header h3{
-	margin: 0;
-	padding: 0;
-	font-size: 45px;
-	font-weight: 500;
-	text-align: left;
-	color: #000000;
-}
-
-.modal-fields{
-	margin: 0 10px;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	}
 
 /* вспомогательный для сеток */
 

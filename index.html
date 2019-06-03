@@ -81,21 +81,18 @@
 	  		<ul class="promo">
 
 	  			<li class="promo-card">
-	  				<!--<img src="img/advantage-picture-red.jpg" alt="картинка с ноутбуком">-->
 	  				<h3>Веб-сайты</h3>
 	  				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 	  				<a class="promo-web" href="#">Заказать</a>
 	  			</li>
 
 	  			<li class="promo-card">
-	  				<!--<img src="img/advantage-picture-green.jpg" alt="картинка с телефоном">-->
 	  				<h3>Приложения</h3>
 	  				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 	  				<a class="promo-app" href="#">Заказать</a>
 	  			</li>
 
 	  			<li class="promo-card">
-	  				<!--<img src="img/advantage-picture-yellow.jpg" alt="картинка с экраном">-->
 	  				<h3>Презентации</h3>
 	  				<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 	  				<a class="promo-pres" href="#">Заказать</a>
@@ -136,39 +133,46 @@
     
     <section class="modal-write-us">
 
-    	<div class="modal-inner">
+    	
 
-	    	<div class="modal-header">
-		    	<h2>Напишите нам</h2>
+    	<div class="modal-header">
+	    	<h2>Напишите нам</h2>
 
-		      	<a href="#" class="modal-close" aria-label="Закрыть модальное окно">
-		      		<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-				    <path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
-					</svg>      	
-		      	</a>
-	        </div>
-	        <div class="modal-fields">
-		        <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
+	      	<a href="#" class="modal-close" aria-label="Закрыть модальное окно">
+	      		<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+			    <path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
+				</svg>      	
+	      	</a>
 
-		      		<div class="modal-form-field">
-		      			<label for="cl-name">Ваше имя:</label>
-		      			<input  id="cl-name" type="text" name="client-name" value="" placeholder="ИмяФамилия">
-		      		</div>
-		      		
-		      		<div class="modal-form-field">
-		      			<label for="cl-email">Ваш e-mail:</label>
-		      			<input id="cl-email" type="email" name="client-email" value="" placeholder="email@example.com">
-		      		</div>
+        </div>
 
-		      		<div class="modal-form-field">
-		      			<label for="cl-letter">Текст письма:</label>
-		      			<textarea id="cl-letter">В свободной форме</textarea>
-		      		</div>
+        
+        <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
 
-		      		<input type="submit" value="Отправить">
-		      	</form>
-		    </div>
-		</div>
+      		
+
+	      		<div class="modal-form-field">
+	      			<label for="cl-name">Ваше имя:</label>
+	      			<input  id="cl-name" type="text" name="client-name" value="" placeholder="ИмяФамилия">
+	      		</div>
+	      		
+	      		<div class="modal-form-field">
+	      			<label for="cl-email">Ваш e-mail:</label>
+	      			<input id="cl-email" type="email" name="client-email" value="" placeholder="email@example.com">
+	      		</div>
+
+      	
+
+      		<div class="modal-form-field modal-cl-letter">
+      			<label for="cl-letter">Текст письма:</label>
+      			<textarea id="cl-letter">В свободной форме</textarea>
+      		</div>
+
+      		<input class="modal-main-button" type="submit" value="Отправить">
+
+      	</form>
+	   
+		
     </section>
 
   </body>

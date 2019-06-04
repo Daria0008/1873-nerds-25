@@ -364,19 +364,45 @@ a {
 	flex-wrap: wrap;
 }
 
-.design-cards li{
+.design-card-background{
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 360px;
+	height: 345px;
+	background-color: transparent;
+}
+
+.design-card{
 	position: relative;
 	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 .design-card-info{
 	margin: 0;
+	padding: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	width: 360px;
 	height: 231px;
 	background-color: #eeeeee;
+
+}
+
+.design-card:hover .design-image{
+	z-index: -1;
+}
+
+.design-card:hover .design-card-header{
+	opacity: 1;
+}
+
+
+.design-image{
+	position: absolute;
+	bottom: 0;
 }
 
 .design-card-header{
@@ -391,10 +417,6 @@ a {
 	border-top-right-radius: 5px;
 	opacity: 0.12;
 	/*background-image: url("../img/browser.svg");*/
-}
-
-.design-card-header:hover{
-	opacity: 1;
 }
 
 .design-card-textheader{
@@ -528,14 +550,6 @@ a {
 	box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
-
-/*.modal-form-both{
-	display: flex;
-	justify-content: space-between;
-	width: 760px;
-	min-height: 80px;
-}*/
-
 .modal-header{
 	display: flex;
 	justify-content: space-between;
@@ -551,6 +565,10 @@ a {
 	text-align: left;
 	color: #000000;
 	margin-bottom: 49px;
+}
+
+.modal-header a{
+	padding: 10px;
 }
 
 .modal-form{
@@ -580,8 +598,6 @@ a {
 	font-weight: bold;
 	text-align: left;
 	line-height: 18px;
-
-
 }
 
 .modal-form-field textarea{
@@ -609,6 +625,18 @@ a {
 	background-color: #fb565a;
 	border: none;
   	border-radius: 3px;
+ }
+
+ .modal-close path{
+ 	fill: rgba(251, 86, 90, 0.3);
+ }
+
+ .modal-close path:hover{
+ 	fill: rgba(251, 86, 90);
+ }
+
+.modal-close path:active{
+ 	fill: #ffffff;
  }
 
 .visually-hidden{

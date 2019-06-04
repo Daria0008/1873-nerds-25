@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet"></link>
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet"></link>
     <link href="css/style.css" rel="stylesheet"></link>
 </head>
 <body>
@@ -34,7 +34,7 @@
 	  		<ul class="purchase-nav">
 	  			<li>
 	  				<a href="#">
-	  				<img class="cart-icon" src="img/cart-icon.svg">
+	  				<img class="cart-icon" src="img/cart-icon.svg" alt="Корзина" width="15px" height="15px">
 	  				Корзина
 	  				</a>
 	  			</li>
@@ -58,17 +58,17 @@
 					  			<legend>Сетка:</legend>
 					  			<ul class="gridtype">
 					  				<li class="filter-option">
-					  					<img src="img/radio-on.svg">
+					  					<img src="img/radio-on.svg" alt="кнопка переключателя" width="25px" height="25px">
 					  					<input type="radio" id="adapt" name="gridtype" value="adapt" class="visually-hidden" checked>
 					  					<label for="adapt">Адаптивная</label>
 					  				</li>
 					  				<li class="filter-option">
-					  					<img src="img/radio-off.svg">
+					  					<img src="img/radio-off.svg" alt="кнопка переключателя" width="25px" height="25px">
 					  					<input type="radio" id="fix" name="gridtype" value="fix" class="visually-hidden">
 					  					<label for="fix">Фиксированная</label>
 					  				</li>
 					  				<li class="filter-option">
-					  					<img src="img/radio-off.svg">
+					  					<img src="img/radio-off.svg" alt="кнопка переключателя" width="25px" height="25px">
 					  					<input type="radio" id="rubber" name="gridtype" value="rubber" class="visually-hidden">
 					  					<label for="rubber">Резиновая</label>
 					  				</li>
@@ -78,27 +78,27 @@
 								<legend>Особенности</legend>
 								<ul class="features">
 									<li class="filter-option">
-										<img src="img/checkbox-on.svg">
-										<input type="checkbox" id="slider" name="slider" class="visually-hidden" checked>
+										<img src="img/checkbox-on.svg" alt="выбираемое поле">
+										<input type="checkbox" id="slider" name="slider" class="visually-hidden" width="27px" height="23px" checked>
 										<label for="slider">Слайдер</label>
 									</li>
 									<li class="filter-option">
-										<img src="img/checkbox-off.svg">
+										<img src="img/checkbox-off.svg" alt="выбираемое поле" width="23px" height="23px">
 										<input type="checkbox" id="priorities" name="priorities" class="visually-hidden">
 										<label for="priorities">Блок преимуществ</label>
 									</li>
 									<li class="filter-option">
-										<img src="img/checkbox-on.svg">
-										<input type="checkbox" id="news" name="news" class="visually-hidden" checked>
+										<img src="img/checkbox-on.svg" alt="выбираемое поле">
+										<input type="checkbox" id="news" name="news" class="visually-hidden" width="27px" height="23px" checked>
 										<label for="news">Новости</label>
 									</li>
 									<li class="filter-option">
-										<img src="img/checkbox-off.svg">
+										<img src="img/checkbox-off.svg" alt="выбираемое поле" width="23px" height="23px">
 										<input type="checkbox" id="gallery" name="gallery" class="visually-hidden">
 										<label for="gallery">Галерея</label>
 									</li>
 									<li class="filter-option">
-										<img src="img/checkbox-off.svg">
+										<img src="img/checkbox-off.svg" alt="выбираемое поле" width="23px" height="23px">
 										<input type="checkbox" id="trashbox" name="trashbox" class="visually-hidden">
 										<label for="trashbox">Корзина</label>
 									</li>
@@ -110,9 +110,13 @@
 
 			  		<section class="designs">
 			  			<ul class="design-cards">
-			  				<li>
+
+			  				<li class="design-card">
+
 			  					<svg class="design-card-header" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-		  						<img src="img/img-sedona-jpg.jpg">
+		  						
+		  						<div class="design-card-background"></div>
+
 			  					<div class="design-card-info">
 				  					<h3 class="design-card-textheader">Sedona</h3>
 				  					<p class="design-card-text">
@@ -120,10 +124,18 @@
 				  					</p>
 				  					<a href="#" class="design-card-price">9 900 руб.</a>
 			  					</div>
+
+			  					
+				  				<img class="design-image" src="img/img-sedona-jpg.jpg" alt="дизайн сайта городка Седона" width="360px" height="576px">
+				  				
 			  				</li>
-			  				<li>
+
+			  				<li class="design-card">
+
 			  					<svg class="design-card-header" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-			  					<img src="img/img-pink-jpg.jpg">
+
+			  					<div class="design-card-background"></div>
+
 			  					<div class="design-card-info">
 				  					<h3 class="design-card-textheader">Pink App</h3>
 				  					<p class="design-card-text">
@@ -131,10 +143,16 @@
 				  					</p>
 				  					<a href="#" class="design-card-price">9 900 руб.</a>
 			  					</div>
+
+			  					<img class="design-image" src="img/img-pink-jpg.jpg" alt="дизайн сайта для приложения Pink App" width="360px" height="576px">
 			  				</li>
-			  				<li>
+
+			  				<li class="design-card">
+
 			  					<svg class="design-card-header" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-			  					<img src="img/img-barbershop-jpg.jpg">
+
+			  					<div class="design-card-background"></div>
+
 			  					<div class="design-card-info">
 				  					<h3 class="design-card-textheader">Barbershop</h3>
 				  					<p class="design-card-text">
@@ -142,10 +160,15 @@
 				  					</p>
 				  					<a  href="#" class="design-card-price">9 900 руб.</a>
 			  					</div>
+
+			  					<img class="design-image" src="img/img-barbershop-jpg.jpg" alt="дизайн сайта для Барбершопа" width="360px" height="576px">
 			  				</li>
-			  				<li>
+
+			  				<li class="design-card">
 			  					<svg class="design-card-header" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-			  					<img src="img/img-mishka-jpg.jpg">
+
+			  					<div class="design-card-background"></div>
+			  					
 			  					<div class="design-card-info">
 				  					<h3 class="design-card-textheader">Mishka</h3>
 				  					<p class="design-card-text">
@@ -153,10 +176,14 @@
 				  					</p>
 				  					<a  href="#" class="design-card-price">9 900 руб.</a>
 			  					</div>
+			  					
+			  					<img class="design-image" src="img/img-mishka-jpg.jpg" alt="дизайн сайта магазина вязаных игрушек" width="360px" height="576px">
 			  				</li>
-			  				<li>
+			  				<li class="design-card">
 			  					<svg class="design-card-header" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-			  					<img src="img/img-aplus-jpg.jpg">
+
+			  					<div class="design-card-background"></div>
+			  					
 			  					<div class="design-card-info">
 				  					<h3 class="design-card-textheader">A plus</h3>
 				  					<p class="design-card-text">
@@ -164,10 +191,14 @@
 				  					</p>
 				  					<a  href="#" class="design-card-price">9 900 руб.</a>
 			  					</div>
+
+			  					<img class="design-image" src="img/img-aplus-jpg.jpg" alt="дизайн сайта для курсов повышения квалификации" width="360px" height="576px">
 			  				</li>
-			  				<li>
+			  				<li class="design-card">
 			  					<svg class="design-card-header" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-			  					<img src="img/img-kvast-jpg.jpg">
+
+			  					<div class="design-card-background"></div>
+			  					
 			  					<div class="design-card-info">
 				  					<h3 class="design-card-textheader">Кваст</h3>
 				  					<p class="design-card-text">
@@ -175,6 +206,8 @@
 				  					</p>
 				  					<a href="#" class="design-card-price">9 900 руб.</a>
 			  					</div>
+
+			  					<img class="design-image" src="img/img-kvast-jpg.jpg" alt="дизайн сайта крафтового кваса" width="360px" height="576px">
 			  				</li>
 			  			</ul>
 			  		</section>
@@ -182,35 +215,40 @@
 	  		</div>
   	</main>
 
-  	<section class="modal-write-us do-center">
-  		<div class="modal-inner">
-
+  	<section class="modal-write-us">
+       	<div class="modal-header">
 	    	<h2>Напишите нам</h2>
-	      	<a href="#" class="modal-close" aria-label="Закрыть модальное окно">
-	      		<img src="img/close-cross.svg">      	
+
+	      	<a href="#" class="modal-close" alt="Закрыть окно" aria-label="Закрыть модальное окно">
+	      		<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+			    <path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
+				</svg>      	
 	      	</a>
-	        <form class="write-us" method="get" action="https://echo.htmlacademy.ru">
 
-	      		<label>
-	      			Ваше имя:
-	      			<input type="text" placeholder="ИмяФамилия">
-	      		</label>
-	      		
-	      		<label>
-	      			Ваш e-mail:
-	      			<input type="email" placeholder="email@example.com">
-	      		</label>
+        </div>
 
-	      		<label>
-	      			Текст письма:
-	      			<textarea>В свободной форме</textarea>
-	      		</label>
+        <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
 
-	      		<input type="submit" value="Отправить">
-	      	</form>
-	      	
-	    </div>
-    </section>    
+      		<div class="modal-form-field">
+      			<label for="cl-name">Ваше имя:</label>
+      			<input  id="cl-name" type="text" name="client-name" value="" placeholder="ИмяФамилия">
+      		</div>
+      		
+      		<div class="modal-form-field">
+      			<label for="cl-email">Ваш e-mail:</label>
+      			<input id="cl-email" type="email" name="client-email" value="" placeholder="email@example.com">
+      		</div>
+
+      		<div class="modal-form-field modal-cl-letter">
+      			<label for="cl-letter">Текст письма:</label>
+      			<textarea id="cl-letter" placeholder="В свободной форме"></textarea>
+      		</div>
+
+      		<input class="modal-main-button" type="submit" value="Отправить">
+
+      	</form>
+	   
+    </section>   
 
   	<footer class="footer-main">
   		<section class="footer-all do-center" aria-label="мы в соцсетях">
@@ -239,8 +277,5 @@
   			</ul> 
 	  	</section>		 			
   	</footer>
-
-
-
   </body>
 </html>

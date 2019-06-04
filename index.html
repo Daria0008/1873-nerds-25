@@ -35,7 +35,7 @@
 	  		<ul class="purchase-nav">
 	  			<li>
 	  				<a href="#">
-	  				<img class="cart-icon" src="img/cart-icon.svg">
+	  				<img class="cart-icon" src="img/cart-icon.svg" alt="Корзина" width="15px" height="15px">
 	  				Корзина
 	  				</a>
 	  			</li>
@@ -103,6 +103,41 @@
   		</section>
   	</main>
 
+  	 <section class="modal-write-us">
+       	<div class="modal-header">
+	    	<h2>Напишите нам</h2>
+
+	      	<a href="#" class="modal-close" aria-label="Закрыть модальное окно">
+	      		<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+			    <path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
+				</svg>      	
+	      	</a>
+
+        </div>
+
+        <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
+
+      		<div class="modal-form-field">
+      			<label for="cl-name">Ваше имя:</label>
+      			<input  id="cl-name" type="text" name="client-name" value="" placeholder="ИмяФамилия">
+      		</div>
+      		
+      		<div class="modal-form-field">
+      			<label for="cl-email">Ваш e-mail:</label>
+      			<input id="cl-email" type="email" name="client-email" value="" placeholder="email@example.com">
+      		</div>
+
+      		<div class="modal-form-field modal-cl-letter">
+      			<label for="cl-letter">Текст письма:</label>
+      			<textarea id="cl-letter" placeholder="В свободной форме"></textarea>
+      		</div>
+
+      		<input class="modal-main-button" type="submit" value="Отправить">
+
+      	</form>
+	   
+    </section>
+
   	<footer class="footer-main">
   		<section class="footer-all do-center" aria-label="мы в соцсетях">
 	  		<div class="footer-letters">
@@ -130,50 +165,5 @@
   			</ul> 
 	  	</section>		 			
   	</footer>
-    
-    <section class="modal-write-us">
-
-    	
-
-    	<div class="modal-header">
-	    	<h2>Напишите нам</h2>
-
-	      	<a href="#" class="modal-close" aria-label="Закрыть модальное окно">
-	      		<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-			    <path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
-				</svg>      	
-	      	</a>
-
-        </div>
-
-        
-        <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
-
-      		
-
-	      		<div class="modal-form-field">
-	      			<label for="cl-name">Ваше имя:</label>
-	      			<input  id="cl-name" type="text" name="client-name" value="" placeholder="ИмяФамилия">
-	      		</div>
-	      		
-	      		<div class="modal-form-field">
-	      			<label for="cl-email">Ваш e-mail:</label>
-	      			<input id="cl-email" type="email" name="client-email" value="" placeholder="email@example.com">
-	      		</div>
-
-      	
-
-      		<div class="modal-form-field modal-cl-letter">
-      			<label for="cl-letter">Текст письма:</label>
-      			<textarea id="cl-letter">В свободной форме</textarea>
-      		</div>
-
-      		<input class="modal-main-button" type="submit" value="Отправить">
-
-      	</form>
-	   
-		
-    </section>
-
   </body>
 </html>

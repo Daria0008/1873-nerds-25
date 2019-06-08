@@ -466,16 +466,42 @@ a {
 }
 
 .modal-write-us{
-	display: block;
+	display: none;
 	position: absolute;
-	top: 1706px;
+	/*top: 1706px;*/
 	left: 240px;
+	top: 200px;
 	width: 760px;
 	height: 430px;
 	margin: 10px auto;
 	padding: 100px 80px;
 	background-color: #ffffff;
 	box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.modal-write-us-showme{
+	display: block;
+	animation-name: float;
+	animation-duration: 0.7s;
+}
+
+.modal-error{
+	animation-name: shake;
+	animation-duration: 1s;
+}
+
+@keyframes float{
+	0%  {transform: translateY(2000px);}
+	30% {transform: translateY(1000px);}
+	50% {transform: translateY(800px);}
+	80% {transform: translateY(500px);}
+	100%{transform: translateY(200px);}
+}
+
+@keyframes shake{
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-5px);}
+	20%, 40%, 60%, 80% {transform: translateX(5px);}
 }
 
 .modal-header{
@@ -572,7 +598,8 @@ a {
 	position: relative;
 	width: 1440px;
 	height: 416px;
-	background-image: url(../img/img-map.jpg);
+	margin: 0 auto;
+	/*background-image: url(../img/img-map.jpg);*/
 }
 
 .footer-main{
@@ -666,6 +693,7 @@ a {
  	clip: rect(0 0 0 0);
   	overflow: hidden;
 }
+
 
 /*.visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,

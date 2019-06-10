@@ -372,11 +372,10 @@ a {
 .logos{
 	list-style: none;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	width: 961px;
 	height: 180px;
-	padding: 50px;
+	padding: 0;
 	margin: 0 auto;
 	border-top: 2px solid #eeeeee;
 	border-bottom: 2px solid #eeeeee;

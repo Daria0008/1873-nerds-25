@@ -345,9 +345,50 @@ a {
 	background-color: #e5a722;
 }
 
+.partners-logo{
+	display: block;
+	margin-bottom: 80px;
+}
+
+.logos{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 961px;
+	height: 180px;
+	padding: 50px;
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+}
+
+.logos li{
+	display: block;
+	width: 240px;
+	height: 90px;
+}
+
+
 .controls{
 	width: 261px;
 }
+
+.controls-button {
+	display: block;
+	width: 260px;
+	height: 50px;
+	padding: 19px auto;
+	margin-top: 48px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 18px;
+	font-size: 16px;
+  	font-weight: 500;
+	color: #000000;
+	background-color: #eeeeee;
+	border: none;
+  	border-radius: 3px;
+ }
 
 .designs{
 	width: 760px;
@@ -637,7 +678,7 @@ a {
 	display: block;
 	width: 219px;
   	height: 50px;
-  	padding: 19px 40px 19px 40px;
+  	padding: 19px auto;
   	margin: 0 auto;
   	text-transform: uppercase;
   	text-align: center;
@@ -770,7 +811,7 @@ input[type="radio"].visually-hidden {
 
 /* вспомогательный для сеток */
 
-/*body > * {background: rgba(255, 0, 0, 0.3);}
+/*body > * {background: rgba(255, 0, 0, 0.3);}*/
 body > * > * {background: rgba(75, 255, 0, 0.3);}
 body > * > * > * {background: rgba(0, 0, 255, 0.3);}
-body > * > * > * > * {background: rgba(150, 150, 150, 0.3);}*/
+body > * > * > * > * {background: rgba(150, 150, 150, 0.3);}

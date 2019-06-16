@@ -121,6 +121,41 @@
 			  		</section>
 
 			  		<section class="designs">
+			  			<fieldset class="design-sorting">
+			  				<legend>Сортировать:</legend>
+			  				<div class="sorting-wrapper">
+			  					<ul class="sorting-links">
+				  					<li>
+				  						<input type="radio" id="sorting-price" name="sorting" value="sorting-price" class="visually-hidden sorting-radio" checked>
+				  						<label for="sorting-price">По цене</label>
+				  					</li>
+				  					<li>
+				  						<input type="radio" id="sorting-type" name="sorting" value="sorting-type" class="visually-hidden sorting-radio">
+				  						<label for="sorting-type">По типу</label>
+				  					</li>
+				  					<li>
+				  						<input type="radio" id="sorting-naming" name="sorting" value="sorting-naming" class="visually-hidden sorting-radio">
+				  						<label for="sorting-naming">По названию</label>
+				  					</li>
+				  				</ul>
+
+			  					<ul class="sorting-buttons">
+			  						<li>
+				  						<input type="radio" id="sorting-desc" name="ascdesc" value="sorting-desc" class="visually-hidden sorting-radio-button" checked>
+				  						<label for="sorting-desc">
+				  							<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#a6a6a6" d="M5.5 10L0 0h11"/></svg>
+				  						</label>
+				  					</li>
+				  					<li>
+				  						<input type="radio" id="sorting-asc" name="ascdesc" value="sorting-asc" class="visually-hidden sorting-radio-button">
+				  						<label for="sorting-asc">
+				  							<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#a6a6a6" d="M5.5 0L0 10h11z"/></svg>
+				  						</label>
+				  					</li>
+			  					</ul>
+			  				</div>
+			  			</fieldset>
+
 			  			<ul class="design-cards">
 
 			  				<li class="design-card">
@@ -286,12 +321,12 @@
 
 				  		<div class="modal-form-field">
 				  			<label for="cl-name">Ваше имя:</label>
-				  			<input  id="cl-name" type="text" name="client-name" value="" placeholder="ИмяФамилия" class="modal-field">
+				  			<input  id="cl-name" type="text" name="client-name" placeholder="ИмяФамилия" class="modal-field">
 				  		</div>
 				  		
 				  		<div class="modal-form-field">
 				  			<label for="cl-email">Ваш e-mail:</label>
-				  			<input id="cl-email" type="email" name="client-email" value="" placeholder="email@example.com" class="modal-field">
+				  			<input id="cl-email" type="email" name="client-email" placeholder="email@example.com" class="modal-field">
 				  		</div>
 
 				  		<div class="modal-form-field modal-cl-letter">
@@ -299,7 +334,7 @@
 				  			<textarea id="cl-letter" placeholder="В свободной форме" class="modal-field"></textarea>
 				  		</div>
 
-				  		<input class="modal-main-button" type="submit" value="Отправить">
+				  		<input type="submit" value="Отправить" class="modal-main-button" >
 
 				  	</form>
 				   

@@ -31,3 +31,6 @@ window.addEventListener("keydown", function(evt){
 			modal.classList.remove("modal-write-us-showme");
 		    modal.classList.remove("modal-error");}}});
 
+var image= '../img/map-marker-png.svg';
+var marker = new google.maps.Marker({position: { lat: parseFloat( this.cafes[i].latitude ), lng: parseFloat( this.cafes[i].longitude ) },
+  map: this.map, icon: image});

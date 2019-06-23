@@ -290,7 +290,9 @@ a {
 }
 
 .promo {
-    max-width: 1101px;
+    margin: 80px 0 80px;
+    padding: 0;
+    max-width: 1100px;
     display: -webkit-box;
 
     display: -ms-flexbox;
@@ -300,8 +302,7 @@ a {
     -ms-flex-pack: justify;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 80px 0 80px;
-    padding-left: 50px;
+        
 }
 
 .promo-card {
@@ -343,6 +344,8 @@ a {
 }
 
 .promo li {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -417,7 +420,7 @@ a {
     justify-content: space-between;
     margin: 0 auto;
     padding-top: 40px;
-    padding-bottom: 76px;
+    padding-bottom: 58px;
     border-top: 2px solid #eeeeee;
 }
 
@@ -428,6 +431,7 @@ a {
 
 .about-us-text h2 {
     margin: 0;
+    margin-top: 34px;
     padding: 0;
     font-size: 45px;
     font-weight: 500;
@@ -437,9 +441,13 @@ a {
 }
 
 .about-us-text h3 {
+    margin: 0;
+    margin-top: 35px;
+    padding: 0;
     font-size: 16px;
     font-weight: bold;
     line-height: 1.5;
+    letter-spacing: 0.1px;
     text-transform: uppercase;
     text-align: left;
     color: #000000;
@@ -459,7 +467,8 @@ a {
     position: relative;
     padding: 0;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-left: -3px;
 }
 
 .about-us-text li::before {
@@ -473,17 +482,13 @@ a {
     background-color: #fb565a;
 }
 
-.about-us-text tr {
-    width: 120px;
-    height: 60px;
-}
-
 .about-us-logo {
     display: block;
     width: 360px;
 }
 
 .about-us-logo caption {
+    margin: 29px 0 25px;
     font-size: 16px;
     font-weight: bold;
     line-height: 1.5;
@@ -492,11 +497,25 @@ a {
     color: #000000;
 }
 
+.about-us-logo table{
+    width: 360px;
+    height: 120px;
+
+}
+
 .about-us-logo th {
+    margin: 0;
+    padding: 0;
+    width: 120px;
     font-size: 45px;
-    font-weight: bold;
     text-align: left;
+    font-weight: bold;
     color: #000000;
+}
+
+.about-us-logo tr {
+    margin: 0;
+    padding: 0;
 }
 
 .about-us-logo sup {
@@ -506,7 +525,11 @@ a {
 }
 
 .about-us-logo td {
+    margin: 0;
+    padding: 0;
+    width: 120px;
     font-size: 16px;
+    text-align: left;
     line-height: 1.13;
 }
 
@@ -525,8 +548,9 @@ a {
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
+    flex-wrap: wrap;
     align-items: center;
-    height: 180px;
+    min-height: 180px;
     padding: 0;
     margin: 0 auto;
     border-top: 2px solid #eeeeee;
@@ -560,11 +584,12 @@ a {
 
 .controls legend {
     margin: 0;
-    margin-bottom: 21px;
+    margin-bottom: 52px;
     padding: 0;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+    letter-spacing: 0.5px;
     text-align: left;
     text-transform: uppercase;
     color: #000000;
@@ -739,7 +764,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     width: 760px;
-    min-height: 138px;
+    min-height: 85px;
     border: none;
 }
 
@@ -855,14 +880,25 @@ a {
     padding: 0;
     display: block;
     width: 360px;
-    height: 345px;
+    height: 350px;
     background-color: transparent;
 }
 
 .design-card {
     position: relative;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
+}
+
+
+.design-card-header {
+    position: absolute;
+    top: -11px;
+    right: 1px;
+    width: 358px;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    opacity: 0.12;
 }
 
 .design-card-info {
@@ -895,17 +931,6 @@ a {
 .design-image {
     position: absolute;
     bottom: 0;
-}
-
-.design-card-header {
-    position: absolute;
-    top: -39px;
-    right: 1px;
-    width: 358px;
-    height: 40px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    opacity: 0.12;
 }
 
 .design-card-textheader {
@@ -963,7 +988,7 @@ a {
 
 .paginator-list {
     margin: 0;
-    padding: 0;
+    padding: 12px 0 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -986,8 +1011,8 @@ a {
     border-radius: 3px;
 }
 
-.paginator-item a::last-child {
-    padding: 19px 89px;
+.paginator-item:last-child a{
+    padding: 19px 79px;
     margin-right: 0;
 }
 
@@ -1326,10 +1351,10 @@ a {
     -ms-flex-direction: column;
     flex-direction: column;
     position: absolute;
-    top: 54px;
-    left: 140px;
+    top: 50px;
+    left: 52px;
     width: 219px;
-    min-height: 208px;
+    height: 210px;
     padding: 50px;
     background-color: #ffffff;
 }
@@ -1337,6 +1362,7 @@ a {
 .geo-card-info h2 {
     margin: 0;
     padding: 0;
+    padding-bottom: 6px;
     text-align: left;
     font-size: 18px;
     font-weight: 500;
@@ -1345,9 +1371,11 @@ a {
 }
 
 .geo-card-info p {
+    margin: 0;
+    padding: 0;
     display: inline-block;
     vertical-align: baseline;
-    width: 219px;
+    width: 210px;
     text-align: left;
     font-size: 16px;
     line-height: 1.13;
@@ -1357,7 +1385,7 @@ a {
 .geo-card-button {
     width: 129px;
     height: 12px;
-    padding: 19px 45px;
+    padding: 15px 43px 23px 46px;
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 500;
@@ -1374,8 +1402,8 @@ a {
 .geo-card-marker {
     display: block;
     position: absolute;
-    top: 89px;
-    left: 705px;
+    top: 87px;
+    left: 730px;
 }
 
 .footer-main {
@@ -1396,26 +1424,27 @@ a {
 }
 
 .footer-letters {
-    margin: auto auto auto 120px;
+    margin: auto auto auto 140px;
     padding: 0;
-    width: 540px;
+    width: 550px;
     height: 80px;
 }
 
-.footer-letters>* {
-    margin: 0;
-    padding: 0;
-}
-
 .footer-letters h2 {
+    margin: 0;
+    margin-top: 4px;
+    padding: 0;
     font-size: 36px;
     font-weight: 500;
+    letter-spacing: 0.3px;
     line-height: 1;
     text-align: left;
     color: #000000;
 }
 
 .footer-letters p {
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 1.38;
     text-align: left;
@@ -1423,17 +1452,23 @@ a {
     margin-top: 12px;
 }
 
-.footer-buttons {
+.footer-buttons{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 260px;
     margin: 0;
     padding: 0;
+    
 }
 
 .footer-button {
     list-style: none;
-    padding: 0 6px;
+    padding: 0;
+    margin: 0;
+
 }
 
 .footer-buttons a {
@@ -1446,7 +1481,6 @@ a {
     vertical-align: middle;
 }
 
-.footer-buttons img,
 .footer-buttons svg {
     margin: 29px;
 }
@@ -1463,9 +1497,14 @@ a {
     fill: rgba(255, 255, 255, 0.3);
 }
 
+.catalog {
+    margin: 0;
+    padding: 0;
+}
+
 .catalog h1 {
     margin: 0 0 60px 0;
-    padding: 14px 0 93px 0;
+    padding: 44px 0 93px 0;
     font-size: 55px;
     font-weight: 500;
     color: #000000;
@@ -1491,7 +1530,8 @@ a {
 /* вспомогательный для сеток */
 
 /*body > * {background: rgba(255, 0, 0, 0.3);}
-body > * > * {background: rgba(75, 255, 0, 0.3);}
-body > * > * > * {background: rgba(0, 0, 255, 0.3);}
-body > * > * > * > * {background: rgba(255, 0, 0, 0.3);}*/
+body > * > * {background: rgba(75, 255, 0, 0.3);}*/
+/*body > * > * > * {background: rgba(0, 0, 255, 0.3);}
+body > * > * > * > * {background: rgba(255, 0, 0, 0.3);}
+body > * > * > * > *  > * {background: rgba(0, 0, 255, 0.3);}*/
 

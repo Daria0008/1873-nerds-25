@@ -36,7 +36,7 @@ window.addEventListener("keydown", function(evt) {
 	}
 });
 
-var image = '../img/map-marker-png.svg';
+var image = "../img/map-marker-png.svg";
 var marker = new google.maps.Marker({
 	position: {
 		lat: parseFloat(this.cafes[i].latitude),
